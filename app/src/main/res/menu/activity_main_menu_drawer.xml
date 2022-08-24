@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/activity_main_drawer_map"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:iconTint="@color/black"
+        android:title="Carte" />
+    <item
+        android:id="@+id/activity_main_drawer_simulator"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        android:title="Simulateur" />
+    <item
+        android:id="@+id/activity_main_drawer_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Paramètres"/>
+
+</menu>

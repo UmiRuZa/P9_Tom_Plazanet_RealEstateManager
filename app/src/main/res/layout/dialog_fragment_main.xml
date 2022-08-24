@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.fragments.DialogFragment">
+
+    <TextView
+        android:id="@+id/dialog_resid_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/tv_frame_dialog"
+        android:hint="Select Residence"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dialog_resid_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_resid_type"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/tv_frame_dialog"
+        android:hint="Select Location"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dialog_tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_resid_location"
+        android:layout_margin="16dp"
+        android:text="Price Range :"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dialog_resid_price_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_tv_price"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/tv_frame_dialog"
+        android:hint="price min"
+        android:inputType="number"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/dialog_resid_price_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_tv_price"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/dialog_resid_price_min"
+        android:background="@drawable/tv_frame_dialog"
+        android:hint="price max"
+        android:inputType="number"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/dialog_tv_surface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_resid_price_min"
+        android:layout_margin="16dp"
+        android:text="Surface Range :"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dialog_resid_surface_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_tv_surface"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/tv_frame_dialog"
+        android:hint="surface min"
+        android:inputType="number"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/dialog_resid_surface_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_tv_surface"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/dialog_resid_surface_min"
+        android:background="@drawable/tv_frame_dialog"
+        android:hint="surface max"
+        android:inputType="number"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/dialog_tv_rooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_resid_surface_min"
+        android:layout_margin="16dp"
+        android:text="Number of Rooms : Studio"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/dialog_resid_rooms_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_tv_rooms"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/tv_frame_dialog"
+        android:max="5"
+        android:min="1" />
+
+
+    <TextView
+        android:id="@+id/dialog_tv_bedrooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_resid_rooms_seekbar"
+        android:layout_margin="16dp"
+        android:text="Number of Bedrooms : 1"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/dialog_resid_bedrooms_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_tv_bedrooms"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/tv_frame_dialog"
+        android:max="5"
+        android:min="1" />
+
+
+    <Button
+        android:id="@+id/dialog_clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_resid_bedrooms_seekbar"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/transparent"
+        android:text="CLEAR"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/dialog_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_resid_bedrooms_seekbar"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toLeftOf="@id/dialog_confirm_button"
+        android:background="@color/transparent"
+        android:text="Cancel"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/dialog_confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_resid_bedrooms_seekbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/transparent"
+        android:text="Confirm"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp" />
+
+</RelativeLayout>
